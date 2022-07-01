@@ -113,7 +113,7 @@ ul {
     }
 
 .mail:hover,
-.mail.focus,
+.mail:focus,
 .tel:hover,
 .tel:focus {
     color: var(--accent-color);
@@ -381,12 +381,11 @@ ul {
 .clients-link {
     width: 100%;
     height: 100%;
-    padding: 16px 32px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
 }
 
 .clients-link:hover,
@@ -403,6 +402,10 @@ ul {
 }
 
 .clients-link:hover .clients-icon {
+    fill: var(--accent-color);
+}
+
+.clients-link:focus .clients-icon {
     fill: var(--accent-color);
 }
 
